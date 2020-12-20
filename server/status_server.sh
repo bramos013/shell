@@ -8,6 +8,6 @@ echo "Domínio $dominio retornando status $status_http"
 
 if [ $status_http -ne 200 ]; then
 	echo "Ocorreu uma falha no serviço, reiniciando $(date +%F\ %T)" >> logs/servidor.log
-	#systemctl restart httpd
+	systemctl restart httpd
 
 fi	
